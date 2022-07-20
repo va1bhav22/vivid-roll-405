@@ -1,5 +1,10 @@
 import './App.css';
 import MenLandingPage from './Pages/MenLandingPage';
+import  {SideMenu} from './Components/SideMenu';
+
+import NavbarRoutes from './Routes/NavbarRoutes';
+import AddToCartPage from './Components/AddToCartPage';
+
 
 
 function App() {
@@ -7,6 +12,10 @@ function App() {
     <div className="App">
     
      <MenLandingPage/>
+     {/* <SideMenu/>
+     <NavbarRoutes/>
+      <AddToCartPage /> */}
+
     </div>
   );
 }
