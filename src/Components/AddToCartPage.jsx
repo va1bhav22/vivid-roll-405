@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
+import AddToCartBottom from "./AddToCartBottom";
+import AddToCartMiddleSection from "./AddToCartMiddleSection";
+import AddToCartTopSection from "./AddToCartTopSection";
+import CartNavbar from "./CartNavbar";
 
 const AddToCartPage = () => {
-  return (
-    <div>
-        
-    </div>
-  )
-}
+      return (
+            <>
+                  <CartNavbar />
+                  <AddToCartTopSection />
+                  <AddToCartMiddleSection />
+                  <AddToCartBottom />
+            </>
+      );
+};
 
-export default AddToCartPage
+export default AddToCartPage;

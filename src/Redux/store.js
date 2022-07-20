@@ -1,5 +1,9 @@
-import { applyMiddleware, legacy_createStore } from "redux";
+import { applyMiddleware, combineReducers, legacy_createStore } from "redux";
 import thunk from "redux-thunk";
-import { cartReducer } from "./cartReducer";
+import { cartReducer } from "./CartProvider/cartReducer";
 
-export const store = legacy_createStore(cartReducer,applyMiddleware(thunk))
+
+const rootReducer = combineReducers({
+    cartReducer
+})
+export const store = legacy_createStore(rootReducer,applyMiddleware(thunk))
