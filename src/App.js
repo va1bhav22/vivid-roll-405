@@ -1,10 +1,14 @@
 import './App.css';
+import  {SideMenu} from './Components/SideMenu';
+
+import NavbarRoutes from './Routes/NavbarRoutes';
 
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello</h1>
+    <div >
+      <SideMenu/>
+     <NavbarRoutes/>
     </div>
   );
 }
