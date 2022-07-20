@@ -1,0 +1,23 @@
+.category_link{
+    float : left;
+    text-decoration: none;
+    margin-right : 15px;
+    font-size: 14px;
+    font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 16px;
+}
+.nav ul{
+    list-style-type: none;
+}
+.list{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 16px;
+}
+.logo{
+    height: 150px;
+    width : 250px;
+}
