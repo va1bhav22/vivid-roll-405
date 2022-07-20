@@ -1,10 +1,15 @@
 import './App.css';
+import AddToCartMiddleSection from './Components/AddToCartMiddleSection';
+import AddToCartTopSection from './Components/AddToCartTopSection';
+import CartNavbar from './Components/CartNavbar';
 
 
 function App() {
   return (
     <div className="App">
-      <h1>hello</h1>
+      <CartNavbar />
+      <AddToCartTopSection />
+      <AddToCartMiddleSection />
     </div>
   );
 }
