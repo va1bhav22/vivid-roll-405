@@ -3,6 +3,7 @@ import styles from "../Styled/Description.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import styled from "styled-components";
 const Description = () => {
     // code for handling description to cart
     const [toggle, setToggle] = useState(false)
