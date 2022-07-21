@@ -1,17 +1,19 @@
 import "./App.css";
+import Navbar from "./Components/Navbar";
 
 import { SideMenu } from "./Components/SideMenu";
 import NavbarRoutes from "./Routes/NavbarRoutes";
-import AddToCartPage from './Components/AddToCartPage';
+// import AddToCartPage from './Components/AddToCartPage';
 
-import MenLandingPage from "./Pages/MenLandingPage";
+// import MenLandingPage from "./Pages/MenLandingPage";
 
 function App() {
   return (
     <div className="App">
-      <SideMenu />
+      {/* <SideMenu /> */}
+      <Navbar/>
       <NavbarRoutes />
-      <AddToCartPage />
+      {/* <AddToCartPage /> */}
     </div>
   );
 }
