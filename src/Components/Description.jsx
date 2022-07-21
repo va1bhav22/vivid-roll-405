@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../Styled/Description.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 const Description = () => {
+    // code for handling description to cart
+    const [toggle, setToggle] = useState(false)
+    const handleBag=()=>{
+          setToggle(toggle?false:true)
+    }
+    // local storage functionality pending
+    const handleBucket=()=>{
+
+    }
   const settings = {
     dots: true,
     slidesToShow: 1,
@@ -81,8 +90,14 @@ const Description = () => {
               <option value="">XL</option>
             </select>
           </div>
-          <button className={styles.cartbtn}>ADD TO BAG</button>
+          <button className={styles.cartbtn}
+          onClick={handleBag}
+          >ADD TO BAG</button>
+          <button className={ toggle?styles.cartbtn:styles.bucketbtn}
+          onClick={handleBucket}
+          >ADD TO BUCKET</button>
         </div>
+       
       </div>
     </div>
   );
