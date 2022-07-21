@@ -4,8 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import { useSelector } from "react-redux";
 import {
       BigItemContainer,
-      ImageContainerDiv,
-      IndividualProductDiv,
+      // ImageContainerDiv,
+      // IndividualProductDiv,
 } from "./styledcomponent";
 
 const responsive = {
@@ -49,6 +49,7 @@ const AddToCartBottom = () => {
                                                                   display: "block",
                                                                   width: "100%",
                                                             }}
+                                                            alt={"addtocart"}
                                                       />
                                                 </div>
                                                 <div

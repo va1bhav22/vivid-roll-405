@@ -8,7 +8,7 @@ const AddToCartTopSection = () => {
       useEffect(() => {
             var total_amount = 0;
             cart.map((item)=> {
-                  total_amount += item.Qyantity*item.price;
+                 return total_amount += item.Qyantity*item.price;
             });
             setTotal(total_amount);
       }, [cart]);
