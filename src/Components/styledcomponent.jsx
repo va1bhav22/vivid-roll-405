@@ -66,11 +66,11 @@ export const ImageContainerDiv = styled.div`
       margin-right: auto;
 `;
 
-export const BigItemContainer =styled.div`
-    margin: 0 50px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-`
+export const BigItemContainer = styled.div`
+      margin: 0 50px;
+      margin-right: 0px;
+      margin-bottom: 10px;
+`;
 
 export const TotalPriceDiv = styled.div`
       height: 70px;
@@ -81,4 +81,69 @@ export const TotalPriceDiv = styled.div`
       justify-content: flex-end;
       position: fixed;
       margin-bottom: 30vh;
-`
+`;
+
+export const AddressMainDiv = styled.div`
+      width: 98vw;
+      height: 90vh;
+      margin: auto;
+      margin-top: 5px;
+`;
+
+export const AddressDiv = styled.div`
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 80px;
+`;
+
+export const AddressForm = styled.div`
+      width: 40%;
+      margin: 10px;
+      margin-top: 90px;
+      margin-left: 40px;
+      p {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 5px;
+      }
+      div {
+            input {
+                  outline: none;
+                  border-bottom: 1px solid black;
+                  font-size: 12px;
+                  margin: 10px;
+                  width: 20vw;
+                  background-color: white;
+            }
+      }
+`;
+
+export const AddressButton = styled.button`
+      background-color: black;
+      color: white;
+      font-size: 18px;
+      padding: 5px;
+      padding-left: 25px;
+      padding-right: 25px;
+      margin: 10px;
+      margin-top: 20px;
+      font-size: 13px;
+`;
+export const Address = styled.div`
+      max-width: 50%;
+      min-width: 40%;
+      margin: 10px;
+      margin-top: 95px;
+      padding: 5px;
+      padding-top: 40px;
+      align-items: center;
+      text-align: right;
+      font-size: 15px;
+
+      button {
+            font-size: 13px;
+            margin-top: 70px;
+            margin-right: 115px;
+      }
+`;

@@ -10,11 +10,11 @@ const SProductCard = ({data}) => {
 
           <Flex key={item.id} direction={'column'} mb={"40px"} p={2} w={"90%"}  >
             <Box>
-                <Image src={item.avatar} alt='Unavailable' />
+                <Image src={item.image} alt='Unavailable' />
 
             </Box>
             <Flex justify={"space-between"} fontSize={"10px"}>
-            <Text >{item.name}</Text>
+            <Text >{item.title}</Text>
             <Text>₹{item.price}</Text>
             </Flex>
             
