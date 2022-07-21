@@ -26,7 +26,7 @@ const Otp = () => {
         <div className={styles.A5}><input placeholder="Enter 4 Digit OTP" /></div>
         <div className={styles.A6}><button>VERIFY</button></div>
         <div className={styles.A7}> Resend OTP in<span style={{color:"green",fontWeight:"bold"}}> 00:{counter}</span></div>
-        <div className={styles.A8}>Resend OTP</div>
+        <div className={styles.A8}>Resend OTP hii</div>
     </div>
    </div>
    </div>
