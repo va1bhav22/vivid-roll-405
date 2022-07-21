@@ -1,0 +1,242 @@
+.Box{
+    height:600px;
+    width: 98%;
+    border: px solid;
+    margin: auto;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(1,1450px);
+    grid-template-rows: repeat(3,200px);
+}
+.Box>div{
+    border: px solid;
+    margin-left: 185px;
+}
+.Box1{
+    display: flex;
+    justify-content: space-between;
+}
+.Box1>img{
+    width: 18%;
+    height: 85%;
+    margin-top: -2%;
+}
+.Box2{
+    display: grid;
+}
+.Box2>p{
+    font-weight: bold;
+}
+.minibox{
+    height: 65px;
+    width: 50%;
+    border: 1px solid;
+    color: #FF930B;
+    margin-top: -2%;
+}
+.minibox>p{
+font-size: 14px;
+margin-top: 8px;
+margin-left: 7px;
+color: #FF930B;
+}
+.Box3{
+    display: grid;
+    grid-template-columns: repeat(2,130px);
+    grid-template-rows: repeat(1,120px);
+    gap: 15px;
+}
+.Box3>div{
+    border: 1px solid rgb(216, 211, 211);
+    
+}
+.Box3>div:hover {
+margin-top: -10%;  }
+.mini1>img{
+    width:69% ;
+    height: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+.mini1>p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+.mini2>img{
+    width:60% ;
+    height: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+.mini2>p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+.Box4{
+    height: 70px;
+    width: 25%;
+    border: px solid;
+    margin-left: 72%;
+    margin-top: 39px;
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(2,150px 230px);
+    grid-template-rows: repeat(1,60%);
+    gap: 20px;
+}
+.Box4>div{
+    border: 1px solid;
+}
+
+.mini4{
+    background-color: black;
+}
+.mini4>button{
+    color: white;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    margin-top: 4%;
+
+}
+.pr{
+    display: flex;
+    margin-left: 69%;
+}
+span{
+    font-size: 12px;
+    font-weight: bold;
+}
+.img{
+    border: 1px solid rgb(204, 202, 202);
+    width: 8%;
+    margin-top: 60px;
+    margin-left: 7%;
+
+}
+form>input{
+    border: none;
+    border-bottom: 1px solid rgb(196, 193, 193);
+    width: 20%;
+    height: 25px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 30px;
+  
+    margin-top: 40px;
+}
+.ha2{
+    margin-left: 7%;
+    font-size: 57%;
+
+}
+.card-details-container{
+   border: 1px solid black;
+    width: 50%;
+    margin: auto;margin-top: -43%;
+
+}
+.card-holder-input{
+    margin-left: 10%;
+    width: 20%;
+}
+@media only screen and (min-width:375px) and (max-width:768px){
+ 
+    .cards{
+        margin-top: 490px;
+    }
+    .pr{
+        margin-left: 50%;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:390px){
+    .cards{
+        margin-top: 245px;
+        border-top: 2px solid black;
+    }
+    .pr{
+        margin-left: 15%;
+    }
+    .card-details-container>img{
+        width: 90px;
+    }
+    form>input{
+        width: 35%;
+        font-size: 12px;
+    }
+}
+
+.btn-continue{
+    margin-left: 75%;
+    position: relative;
+}
+.A1{
+    height: 500px;
+    width: 80%;
+    border: px solid;
+    margin-left: 30%;
+    margin-top: -35px;
+}
+.A1>div{
+    height: 100%;
+    width: 35%;
+    border: px solid;
+    margin: auto;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1,80%);
+    grid-template-rows: repeat(7,10%);
+    gap: 2px;
+}
+.A1>div>div{
+    border: px solid;
+    margin-top: 3px;
+}
+.A2>img{
+    height: 100%;
+    margin: auto;
+}
+.A3{
+    font-size: 25px;
+   font-weight: bold;
+   margin: auto;
+}
+.A4{
+  margin: auto;
+}
+.A5>input{
+    border: 1px solid rgb(189, 184, 184);
+    width: 87%;
+    height: 90%;
+   margin-left: 20px;
+   padding: 5px;
+}
+.A6>button{
+    width: 87%;
+    height: 90%;
+    background-color: rgb(116, 167, 208);
+    margin-left: 20px;
+    color: white;
+}
+.A7{
+   margin: auto;
+}
+.A8{
+    text-decoration: underline;
+    color: rgb(107, 9, 199);
+}
