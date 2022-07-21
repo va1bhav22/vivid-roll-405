@@ -1,5 +1,5 @@
 import React from "react";
-import { AddToCartContainerNavbar, LogoDiv, MenuDiv } from "./styledcomponent";
+import { AddToCartContainerNavbar, LogoDiv, MenuDiv } from "./Styledcomponent";
 
 const Navbar = () => {
       return (

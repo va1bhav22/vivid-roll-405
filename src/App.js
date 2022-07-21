@@ -1,16 +1,15 @@
 import "./App.css";
-import Description from "./Components/Description";
+import AddressPage from "./Pages/AddressPage";
 
-// import  {SideMenu} from './Components/SideMenu';
-// import NavbarRoutes from './Routes/NavbarRoutes';
+
 // import AddToCartPage from './Components/AddToCartPage';
 
-// import MenLandingPage from './Pages/MenLandingPage';
+// import MenLandingPage from "./Pages/MenLandingPage";
 
 function App() {
   return (
     <div className="App">
-     
+  
     </div>
   );
 }
