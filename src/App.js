@@ -6,9 +6,9 @@ import NavbarRoutes from './Routes/NavbarRoutes';
 import AddToCartPage from './Components/AddToCartPage';
 
 
-
 function App() {
   return (
+   
     <div className="App">
     
      <MenLandingPage/>
@@ -17,6 +17,7 @@ function App() {
       <AddToCartPage /> */}
 
     </div>
+   
   );
 }
 
