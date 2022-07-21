@@ -1,4 +1,5 @@
 import "./App.css";
+import AddressPage from "./Pages/AddressPage";
 
 
 // import AddToCartPage from './Components/AddToCartPage';
@@ -8,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-
+      <AddressPage />
     </div>
   );
 }
