@@ -14,7 +14,7 @@ const Navbar = () => {
         <Image className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg' alt='zara logo'/>
         </div>
         <div className={styles.end_MainDiv}>
-          <Text className={styles.search}  fontSize='13px' fontWeight='500' textDecoration='underline'  textUnderlineOffset='3px'>SEARCH</Text>
+          <Link  to='/search'> <p style={{borderBottom:"1px solid black"}}>SEARCH</p></Link>
           <div style={{display: 'flex', marginTop: '-20px' ,justifyContent : 'end',marginLeft: '30px', gap:'20px'}}>
           <Link to='/login'>LOGIN</Link>
           <Link to='/help'>HELP</Link>

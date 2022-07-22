@@ -8,6 +8,10 @@ import ZaraAthleticz from '../Pages/ZaraAthleticz';
 import Payment from '../Pages/Payment';
 import Description from "../Components/Description"
 import CardPayment from '../Pages/CardPayment';
+import SearchPage from '../Pages/SearchPage';
+import SignUp from '../Pages/SignUp';
+import Login from '../Pages/Login';
+
 import PreLandingPage from '../Pages/PreLandingPage';
 import JeansPage from "../Pages/JeansPage";
 import MenLandingPage from "../Pages/MenLandingPage"
@@ -30,6 +34,9 @@ const NavbarRoutes = () => {
         <Route path='/shirt' element={<Shirt/>}/>
         <Route path="/cardpayment" element={<CardPayment />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path='/search' element={<SearchPage/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
+        <Route path='/login' element={<Login/>}/>
     </Routes>
     </>
   )
