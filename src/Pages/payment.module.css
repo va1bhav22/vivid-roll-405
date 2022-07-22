@@ -46,12 +46,17 @@ color: #FF930B;
     grid-template-rows: repeat(1,120px);
     gap: 15px;
 }
-.Box3>div{
+.Box3>button{
     border: 1px solid rgb(216, 211, 211);
     
 }
-.Box3>div:hover {
-margin-top: -10%;  }
+.Box3>button:hover {
+margin-top: -10%; 
+ 
+ }
+ .Box3>div:onclick{
+    border: 5px;
+ }
 .mini1>img{
     width:69% ;
     height: 50%;
@@ -83,10 +88,11 @@ margin-top: -10%;  }
     margin-left: 72%;
     margin-top: 39px;
     display: grid;
-    position: absolute;
     grid-template-columns: repeat(2,150px 230px);
     grid-template-rows: repeat(1,60%);
     gap: 20px;
+    position: fixed;
+    z-index: 10;
 }
 .Box4>div{
     border: 1px solid;
@@ -94,6 +100,8 @@ margin-top: -10%;  }
 
 .mini4{
     background-color: black;
+    
+    
 }
 .mini4>button{
     color: white;
@@ -101,6 +109,7 @@ margin-top: -10%;  }
     height: 100%;
     width: 100%;
     font-size: 15px;
+    
 }
 .cards{
     display: flex;
@@ -223,8 +232,9 @@ form>input{
     border: 1px solid rgb(189, 184, 184);
     width: 87%;
     height: 90%;
-   margin-left: 20px;
+    margin-left: 25px;
    padding: 5px;
+   background-color: rgb(194, 206, 206);
 }
 .A6>button{
     width: 87%;
@@ -232,11 +242,20 @@ form>input{
     background-color: rgb(116, 167, 208);
     margin-left: 20px;
     color: white;
+    border-radius: 1px;
 }
 .A7{
    margin: auto;
 }
-.A8{
+.A8>button{
     text-decoration: underline;
-    color: rgb(107, 9, 199);
+    color: rgb(74, 6, 137);
+    
+}
+.A6>button:hover{
+    background-color: rgb(84, 148, 201);
+}
+.mini1b{
+    border: 2px solid blue;
+    border-radius:5px ;
 }
