@@ -200,7 +200,7 @@ const jeans_data6 = [
 const JeansPage = () => {
       return (
             <>
-            <Navbar/>
+            <Navbar/>   
                   <div>
                         <JeansCategoryTopSection />
                         <ReusedJeansComponent
