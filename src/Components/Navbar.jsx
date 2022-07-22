@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className={styles.nav_cont}>
         <div className={styles.logo_div}>
         <SideMenu/>
-        <Image className={styles.logo} src='https://imgs.search.brave.com/q76HRaf7wsVflNnR1cI3hqvR4YK448ZMVSK5NOhX898/rs:fit:1200:833:1/g:ce/aHR0cHM6Ly92aWFj/b21pdC5uZXQvd3At/Y29udGVudC91cGxv/YWRzLzIwMTkvMDEv/WkFSQS1uZXctbG9n/by0wMC5qcGc' alt='zara logo'/>
+        <Image className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg' alt='zara logo'/>
         </div>
         <div className={styles.end_MainDiv}>
           <Text className={styles.search}  fontSize='13px' fontWeight='500' textDecoration='underline'  textUnderlineOffset='3px'>SEARCH</Text>
