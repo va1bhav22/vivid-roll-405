@@ -1,55 +1,46 @@
 import React from 'react'
 import {useSelector,useDispatch} from "react-redux"
-import {getTshirtData} from "../Redux/AppProvider/action"
+import {getTshirtData,getTracksuitData,getTrouserData,getSweatShirtData} from "../Redux/AppProvider/action"
 import { useEffect } from 'react'
-import styled from "styled-components"
 import SProductCard from '../Components/SProductCard'
 
-
+//claver programmer
 const STshirt = () => {
-    const Tshirt=useSelector(state=>state.AppReducer.TShirt)
+    const {TShirt,Tracksuit,Trouser,SweatShirt}=useSelector(state=>state.AppReducer)
     const dispatch=useDispatch();
-    // console.log(Tshirt);
-
+//     console.log(TShirt);
+// console.log(Tracksuit)
+console.log(SweatShirt);
 
     useEffect(() => {
-        if (Tshirt?.length === 0) {
           
           dispatch(getTshirtData);
-        }
-      }, [dispatch, Tshirt?.length]);
-      console.log(Tshirt);
+          dispatch(getTracksuitData);
+          dispatch(getTrouserData);
+           dispatch(getSweatShirtData);
+      }, []);
+      // console.log(Tshirt);
 
   return (
     <div  style={{backgroundColor:"black"}}>
-      <DataWrapper >
-      {
-        Tshirt?.length>0 && Tshirt.map(item=>{
-          return (
-            
-               
+      <div >
+      <SProductCard data={TShirt} />
+       </div>
+       <div >
+      <SProductCard data={Tracksuit} />
+       </div>
 
-                 <SProductCard key={item.id} {...item} />
-              
-               
-        )
-        })
-      }
-       </DataWrapper>
+      <div >
+      <SProductCard data={Trouser} />
+       </div>
+
+       <div >
+      <SProductCard data={SweatShirt} />
+       </div>
     </div>
   )
 }
 
 
-const DataWrapper=styled.div`
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-justify-content:space-around;
-border:1px solid red;
-color:white;
-background-color:black;
-width:80%;
-margin:auto;
-`;
+
 export default STshirt
