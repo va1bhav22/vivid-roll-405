@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 // import { CartContext } from "../CartContext/CartContext";
 import styles from "./payment.module.css";
+import ProductFooter from "../Components/ProductFooter";
 
     export default function CardPayment() {
         // const {total}=useContext(CartContext);
@@ -69,6 +70,7 @@ import styles from "./payment.module.css";
             <button onClick={purchase}>CONTINUE</button>
         </div>
     </div>
+    <ProductFooter/>
     </div>
     
   )
