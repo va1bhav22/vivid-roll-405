@@ -10,7 +10,6 @@ const AddToCartMiddleSection = () => {
       const handleIncrement = (ind)=> {
             const items = JSON.parse(localStorage.getItem("CartItem"));
             let newItem = items[ind];
-            console.log(newItem.Qyantity)
             newItem.Qyantity += 1;
             localStorage.setItem("CartItem",JSON.stringify(items));
             dispatch(GET_UPDATED_ITEM_QUANTITY_FUNC(items));
@@ -55,7 +54,6 @@ const AddToCartMiddleSection = () => {
       localStorage.removeItem("item");
     }
     dispatch(Get_UDATED_LOCAL_STORAGE_FUNCT(items));
-    console.log(items);
       }
       const CartItem = useSelector((state) => state.cartReducer.CartProduct);
       return (
