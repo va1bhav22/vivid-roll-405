@@ -1,8 +1,12 @@
 import React from 'react'
-
+import Navbar from "../Components/Navbar"
+import MenLandingPage from "./MenLandingPage"
 const HomePage = () => {
   return (
-    <div>fp01</div>
+   <div>
+    <Navbar/>
+    <MenLandingPage/>
+   </div>
   )
 }
 

@@ -11,8 +11,8 @@ export const catagoryList = [
             cName : 'styles.list'
         },
         {
-            title : 'BLAZERS',
-            path : '/blazers',
+            title : 'JEANS',
+            path : '/jeans',
             cName : 'styles.list'
         },
         {

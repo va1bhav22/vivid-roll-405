@@ -2,6 +2,7 @@ import React from "react";
 import JeansBottomSection from "../Components/JeansBottomSection";
 import JeansCategoryTopSection from "../Components/JeansCategoryTopSection";
 import JeansNavbar from "../Components/JeansNavbar";
+import Navbar from "../Components/Navbar";
 import ReusedJeansComponent from "../Components/ReusedJeansComponent";
 
 const jeans_data = [
@@ -199,7 +200,7 @@ const jeans_data6 = [
 const JeansPage = () => {
       return (
             <>
-                  <JeansNavbar />
+            <Navbar/>   
                   <div>
                         <JeansCategoryTopSection />
                         <ReusedJeansComponent
