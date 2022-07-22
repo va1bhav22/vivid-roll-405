@@ -12,6 +12,7 @@ import PreLandingPage from '../Pages/PreLandingPage';
 import JeansPage from "../Pages/JeansPage";
 import MenLandingPage from "../Pages/MenLandingPage"
 import Navbar from '../Components/Navbar';
+import AddToCartPage from '../Components/AddToCartPage';
 const NavbarRoutes = () => {
   return (
     <>
@@ -23,6 +24,7 @@ const NavbarRoutes = () => {
         <Route path='/suits' element={<Suits/>}/>
         <Route path='/jeans' element={<JeansPage/>}/>
         <Route path='/description/:id' element={<Description />}></Route>
+        <Route path="/cart" element={<AddToCartPage/>}/>
         <Route path='/shirt' element={<Shirt/>}/>
         <Route path="/cardpayment" element={<CardPayment />} />
         <Route path="/payment" element={<Payment />} />
