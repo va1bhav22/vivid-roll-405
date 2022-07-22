@@ -1,10 +1,14 @@
 import React from 'react';
 import { Image,Box,Flex} from '@chakra-ui/react';
 import { BiBody } from "react-icons/bi";
-
+import { useNavigate } from 'react-router-dom';
 
 // import { StyledComponent } from '@emotion/styled';
 const PreLandingPage = () => {
+  const navigate = useNavigate();
+  const handleNavigate=()=>{
+    navigate("/in")
+  }
   return (
     <div>
        <Box>
@@ -48,7 +52,8 @@ const PreLandingPage = () => {
     color:"#ffff",
     fontWeight:"bold",
     width:"50px"
-     }}>Go</button>
+     }}
+     onClick={handleNavigate}>Go</button>
    </Box>
     
      </Flex>

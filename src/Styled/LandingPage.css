@@ -15,7 +15,7 @@
   height: 100vh;
   display: flex;
   justify-content: flex-end;
- 
+text-align: center;
   flex-direction: column;
   gap: 15rem;
 
@@ -32,7 +32,7 @@
     margin: 5px;
 }
 .zara_address{
-    line-height: 5px;
+   
     text-align: left;
     font-size: 0.6rem;
     padding: 0.5em;

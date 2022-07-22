@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Navigate } from 'react-router-dom';
 import CardPayment from './CardPayment';
 import styles from "./payment.module.css";
+import ProductFooter from "../Components/ProductFooter";
+import { border } from '@chakra-ui/react';
 const Payment = () => {
+    const [toggle,setToggle] = useState(false)
     // const history=useNavigate()
-    const handleCon=()=>{
-        Navigate(<CardPayment/>)
+    const handleCon=()=>{   
+        if(!toggle){
+            alert("Plaese Choose Payment method")
+        }
+    }
+    const Visa=()=>{
+      setToggle(toggle?false:true)  
     }
 
   return (
@@ -22,10 +30,12 @@ const Payment = () => {
         </div>
        </div>
        <div className={styles.Box3}>
-        <div className={styles.mini1}>
+        <button onClick={Visa}>
+        <div className={toggle?styles.mini1b:styles.mini1}>
             <img src="https://logotyp.us/files/visa.svg" alt="" />
             <p>VISA</p>
         </div>
+        </button>
         <div className={styles.mini2}>
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg" alt="" />
             <p>MASTERCARD</p>
@@ -37,9 +47,10 @@ const Payment = () => {
             
         </div>
         <div className={styles.mini4}>
-            <button onClick={handleCon}>CONTINUE</button>
+            <button onClick={handleCon} >CONTINUE</button>
         </div>
     </div>
+    <ProductFooter/>
     </div>
   )
 }

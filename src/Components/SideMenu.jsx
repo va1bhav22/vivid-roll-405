@@ -32,7 +32,7 @@ const handleMenu = ()=>{
 }
   return (
     <>
-      <Button ref={btnRef}  onClick={onOpen}  >
+      <Button ref={btnRef}  onClick={onOpen} variant={'ghost'} >
      <HamburgerIcon/> 
       </Button>
       <Drawer
@@ -49,7 +49,7 @@ const handleMenu = ()=>{
             <div flex-direction='row-reverse' style={{justifyContent : 'space-between'}}>
           
             <Link to='/'>
-            <Image className={styles.logo} src='https://imgs.search.brave.com/q76HRaf7wsVflNnR1cI3hqvR4YK448ZMVSK5NOhX898/rs:fit:1200:833:1/g:ce/aHR0cHM6Ly92aWFj/b21pdC5uZXQvd3At/Y29udGVudC91cGxv/YWRzLzIwMTkvMDEv/WkFSQS1uZXctbG9n/by0wMC5qcGc' alt='zara logo'/>
+            <Image className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg' alt='zara logo'/>
             </Link>
             <DrawerCloseButton />
             </div>

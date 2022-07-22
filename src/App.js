@@ -1,20 +1,14 @@
-import "./App.css";
-import Navbar from "./Components/Navbar";
+import './App.css';
+import AddToCartPage from './Components/AddToCartPage';
 
-import { SideMenu } from "./Components/SideMenu";
-import NavbarRoutes from "./Routes/NavbarRoutes";
-// import AddToCartPage from './Components/AddToCartPage';
-import STshirt from './Pages/STshirt'
-// import MenLandingPage from "./Pages/MenLandingPage";
+import NavbarRoutes from './Routes/NavbarRoutes';
+
 
 function App() {
   return (
     <div className="App">
-      {/* <SideMenu /> */}
-      <Navbar/>
-      <NavbarRoutes />
-      {/* <AddToCartPage /> */}
-      {/* <STshirt/> */}
+       <NavbarRoutes/>
+      
     </div>
   );
 }
