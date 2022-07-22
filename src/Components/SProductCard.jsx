@@ -10,7 +10,7 @@ const SProductCard = ({data}) => {
 
           <Flex key={item.id} direction={'column'} mb={"40px"} p={2} w={"90%"}  >
             <Box>
-                <Image src={item.image} alt='Unavailable' />
+                <Image src={item.image[0]} alt='Unavailable' />
 
             </Box>
             <Flex justify={"space-between"} fontSize={"10px"}>
@@ -38,3 +38,5 @@ width:80%;
 margin:auto;
 `;
 export default SProductCard
+
+

@@ -6,6 +6,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { JeansNavbarMainDiv } from "./jeansTopSection";
+import { SSideMenuFilter } from "./SSideMenuFilter";
 
 const JeansNavbar = () => {
       return (
@@ -72,13 +73,15 @@ const JeansNavbar = () => {
                                     <div style={{ marginTop: "30px" }}>
                                           <button
                                                 style={{
+                                                      backgroundColor:"black",
                                                       border: "1px solid black",
                                                       outline: "none",
                                                       padding : "2px 15px",
                                                       marginLeft : "40px",
                                                 }}
-                                          >
-                                                FILTER
+                                          >     
+                                          <SSideMenuFilter/>
+                                          
                                           </button>
                                     </div>
                               </div>
