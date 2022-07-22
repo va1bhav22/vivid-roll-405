@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { get_total_amount_func } from "../Redux/CartProvider/action";
 import {
       BigItemContainer,
+      ChekoutButtonDiv,
       // ImageContainerDiv,
       // IndividualProductDiv,
 } from "./styledcomponent";
@@ -26,6 +29,21 @@ const responsive = {
       },
 };
 const AddToCartBottom = () => {
+      const navigate = useNavigate();
+      const dispatch = useDispatch();
+      const cart = useSelector((state) => state.cartReducer.CartProduct);
+      const [total, setTotal] = useState(0);
+      useEffect(() => {
+            var total_amount = 0;
+            cart.map((item) => {
+                  return (total_amount += item.Quantity * item.price);
+            });
+            setTotal(total_amount);
+      }, [cart]);
+      const handleContinue = () => {
+            dispatch(get_total_amount_func(total));
+            navigate("/address");
+      };
       const moreProduct = useSelector((state) => state.cartReducer.moreProduct);
       return (
             <div>
@@ -37,7 +55,7 @@ const AddToCartBottom = () => {
                               {moreProduct.map((item) => {
                                     return (
                                           <div
-                                          key={item.title}
+                                                key={item.title}
                                                 style={{
                                                       width: "300px",
                                                 }}
@@ -69,7 +87,9 @@ const AddToCartBottom = () => {
                                                       }}
                                                 >
                                                       <button
-                                                            style={{"padding" : "5px 50px"}}
+                                                            style={{
+                                                                  padding: "5px 50px",
+                                                            }}
                                                       >
                                                             ADD
                                                       </button>
@@ -79,6 +99,12 @@ const AddToCartBottom = () => {
                               })}
                         </Carousel>
                   </BigItemContainer>
+                  <ChekoutButtonDiv>
+                        <button>TOTAL : ₹ {total}</button>
+                        <button onClick={handleContinue}>
+                              COUNTINUE
+                        </button>
+                  </ChekoutButtonDiv>
             </div>
       );
 };

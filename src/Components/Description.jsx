@@ -7,8 +7,11 @@ import styled from "styled-components";
 import { useParams , useNavigate } from "react-router";
 import axios from "axios";
 import { Spinner } from "@chakra-ui/react";
+import { useDispatch } from "react-redux";
+import { GET_UPDATED_ITEM_QUANTITY_FUNC } from "../Redux/CartProvider/action";
 const Description = () => {
       const navigate = useNavigate();
+      const dispatch = useDispatch();
       const params = useParams();
       const [data, setData] = useState({
             image: [],
@@ -32,6 +35,7 @@ const Description = () => {
             setToggle(toggle ? false : true);
             const item = JSON.parse(localStorage.getItem("CartItem"))||[];
             item.push({...data,Quantity:1});
+            dispatch(GET_UPDATED_ITEM_QUANTITY_FUNC(item))
             localStorage.setItem("CartItem", JSON.stringify(item));
       };
       // // local storage functionality pending
