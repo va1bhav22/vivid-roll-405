@@ -6,6 +6,7 @@ import Shirt from '../Pages/Shirt';
 import Suits from '../Pages/Suits';
 import ZaraAthleticz from '../Pages/ZaraAthleticz';
 import Payment from '../Pages/Payment';
+import Description from "../Components/Description"
 import CardPayment from '../Pages/CardPayment';
 import PreLandingPage from '../Pages/PreLandingPage';
 import JeansPage from "../Pages/JeansPage";
@@ -21,6 +22,7 @@ const NavbarRoutes = () => {
         <Route path='/zara_athleticz' element={<ZaraAthleticz/>}/>
         <Route path='/suits' element={<Suits/>}/>
         <Route path='/jeans' element={<JeansPage/>}/>
+        <Route path='/description/:id' element={<Description />}></Route>
         <Route path='/shirt' element={<Shirt/>}/>
         <Route path="/cardpayment" element={<CardPayment />} />
         <Route path="/payment" element={<Payment />} />

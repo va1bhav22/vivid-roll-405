@@ -10,6 +10,7 @@ import {
 } from "./jeansTopSection";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useNavigate } from "react-router-dom";
 
 
 var settings = {
@@ -21,6 +22,11 @@ var settings = {
 };
 
 const ReusedJeansComponent = ({image1,image2,jeans_data}) => {
+      const navigate = useNavigate();
+      const handleProduct = (id)=> {
+            // console.log(id)
+            navigate(`/description/${id}`);
+      }
       return (
             <div >
                   <JeansTopSectionMainDiv >
@@ -50,7 +56,7 @@ const ReusedJeansComponent = ({image1,image2,jeans_data}) => {
                               <Slider slidesToShow={jeans_data.length>=5 ? 5 : 3} {...settings}>
                                     {jeans_data.map((item) => {
                                           return (
-                                                <IndividualItemDiv key={item.id}>
+                                                <IndividualItemDiv key={item.id} onClick={()=> handleProduct(item.id)}>
                                                       <IndividualItemImageDiv>
                                                             <img
                                                                   src={
