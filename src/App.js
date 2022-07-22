@@ -1,4 +1,6 @@
 import "./App.css";
+import STshirt from "./Pages/STshirt";
+// import Navbar from "./Components/Navbar";
 
 
 
@@ -9,6 +11,8 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+      {/* <Navbar/> */}
+      <STshirt/>
     </div>
   );
 }
