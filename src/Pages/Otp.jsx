@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./payment.module.css";
-
+import OTPInput, { ResendOTP } from "otp-input-react";
+import ProductFooter from "../Components/ProductFooter";
 const Otp = () => {
     const [counter, setCounter] = React.useState(59);
     React.useEffect(() => {
@@ -8,6 +9,21 @@ const Otp = () => {
    counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
    return () => clearInterval(timer);
    }, [counter]);
+
+   const handleReset = () => {
+   setCounter(59) 
+  };
+  const [OTP, setOTP] = React.useState("");
+ const handleVr =()=>{
+    if((OTP)){
+        alert("purchase succesfull");
+
+        
+      }else{
+        alert("fill the all OTP")
+        
+      }
+ }
 
     return(
         <div>
@@ -23,14 +39,24 @@ const Otp = () => {
         </div>
         <div className={styles.A3}>Payment</div>
         <div className={styles.A4}>Enter OTP Sent to your mobile number</div>
-        <div className={styles.A5}><input placeholder="Enter 4 Digit OTP" /></div>
-        <div className={styles.A6}><button>VERIFY</button></div>
+        <div >
+        <OTPInput className={styles.A5}
+      value={OTP}
+      onChange={setOTP}
+      autoFocus
+      OTPLength={4}
+      otpType="number"
+      disabled={false}
+      secure
+    />
+    </div>
+        <div className={styles.A6}><button onClick={handleVr}>VERIFY</button></div>
         <div className={styles.A7}> Resend OTP in<span style={{color:"green",fontWeight:"bold"}}> 00:{counter}</span></div>
-        <div className={styles.A8}>Resend OTP hii</div>
+        <div className={styles.A8}><button onClick={handleReset}>Resend OTP</button></div>
     </div>
    </div>
    </div>
-      
+      <ProductFooter/>
    </div>
     )
 }
