@@ -2,23 +2,24 @@ import React from "react";
 import JeansBottomSection from "../Components/JeansBottomSection";
 import JeansCategoryTopSection from "../Components/JeansCategoryTopSection";
 import JeansNavbar from "../Components/JeansNavbar";
+import Navbar from "../Components/Navbar";
 import ReusedJeansComponent from "../Components/ReusedJeansComponent";
 
 const jeans_data = [
       {
-            id: "292023982hdw98d9n",
+            id: "130498985456",
             image: "https://static.zara.net/photos///2022/I/0/1/p/6045/410/406/2/w/183/6045410406_15_1_1.jpg?ts=1657722880788",
             title: "RIPPED SKINNY JEANS",
             price: "2,990.00",
       },
       {
-            id: "sdkmsdp230238-23iwdk",
+            id: "229392302389",
             image: "https://static.zara.net/photos///2022/I/0/1/p/6045/410/250/2/w/183/6045410250_15_1_1.jpg?ts=1657722840898",
             title: "RIPPED SKINNY JEANS",
             price: "2,990.00",
       },
       {
-            id: "alkxkjhdeucd89wcnm/kl9",
+            id: "3590303958",
             image: "https://static.zara.net/photos///2022/I/0/1/p/6045/410/800/2/w/183/6045410800_15_1_1.jpg?ts=1657722943571",
             title: "RIPPED SKINNY JEANS",
             price: "2,990.00",
@@ -199,7 +200,7 @@ const jeans_data6 = [
 const JeansPage = () => {
       return (
             <>
-                  <JeansNavbar />
+            <Navbar/>   
                   <div>
                         <JeansCategoryTopSection />
                         <ReusedJeansComponent

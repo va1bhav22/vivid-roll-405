@@ -11,3 +11,10 @@ export const GET_UPDATED_ITEM_QUANTITY_FUNC = (data)=> {
         payload : data
     }
 }
+
+export const get_total_amount_func = (amount)=> {
+    return {
+        type : "GET_ITEMS_TOTAL_AMOUNT",
+        payload : amount
+    }
+}

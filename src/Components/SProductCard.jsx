@@ -17,8 +17,6 @@ const SProductCard = ({data}) => {
             <Text >{item.title}</Text>
             <Text>₹{item.price}</Text>
             </Flex>
-            
-      
         </Flex>
           )
         })}

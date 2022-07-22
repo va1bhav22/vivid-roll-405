@@ -3,10 +3,12 @@
     justify-content: space-between;
    padding : 20px;
    padding-bottom: 0px;
+  
+  position: fixed; top: 0; left: 0; z-index:1; width: 100%; 
 }
 .logo{
-    height: 150px;
-    width : 250px;
+    height: 120px;
+    width : 220px;
    
 }
 .logo_div{
@@ -21,9 +23,8 @@
 
 
 }
-.search u::after{
-    width : 180px;
-    /* text-decoration: underline; */
-    content: "................";
-    color: transparent;
-}
+/* .search {
+    border-bottom: 1px solid black;
+  width: 10%;
+    /* border: 1px solid red; */
+/* }  */
