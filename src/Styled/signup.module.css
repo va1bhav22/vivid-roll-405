@@ -1,13 +1,11 @@
 .main{
     margin-left: 80px;
     
-    
 }
 .input_wrap{
     position: relative;
-    width:  20%;
-    margin: 10px;
-    margin-left: 80px;
+    width:  40%;
+    margin: 30px;
 }
 .input_wrap .inputText{
     width: 100%;
@@ -15,7 +13,9 @@
     border : none;
     border-bottom: 1px solid #777;
 }
+.input_wrap .inputText:focus{
 
+}
 
 .input_wrap .label {
     position: absolute;
@@ -33,15 +33,11 @@
 .heading{
     font-weight: 500;
     font-size: 18px;
-    margin-left: 80px;
-
 }
-
 .btnDiv{
     margin: 30px;
-    width : 20%; 
+    width : 40%; 
     justify-content: center;
-    margin-left: 80px;
 }
 .submitBtn{
     width : 100% ;

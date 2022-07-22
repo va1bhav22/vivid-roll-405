@@ -14,7 +14,7 @@ const Navbar = () => {
         <Image className={styles.logo} src='https://imgs.search.brave.com/q76HRaf7wsVflNnR1cI3hqvR4YK448ZMVSK5NOhX898/rs:fit:1200:833:1/g:ce/aHR0cHM6Ly92aWFj/b21pdC5uZXQvd3At/Y29udGVudC91cGxv/YWRzLzIwMTkvMDEv/WkFSQS1uZXctbG9n/by0wMC5qcGc' alt='zara logo'/>
         </div>
         <div className={styles.end_MainDiv}>
-          <Text className={styles.search}  fontSize='13px' fontWeight='500' textDecoration='underline'  textUnderlineOffset='3px'>SEARCH</Text>
+          <Link  to='/search'> <p style={{borderBottom:"1px solid black"}}>SEARCH</p></Link>
           <div style={{display: 'flex', marginTop: '-20px' ,justifyContent : 'end',marginLeft: '30px', gap:'20px'}}>
           <Link to='/login'>LOGIN</Link>
           <Link to='/help'>HELP</Link>
