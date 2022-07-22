@@ -4,16 +4,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
-import { useParams } from "react-router";
+import { useParams , useNavigate } from "react-router";
 import axios from "axios";
 import { Spinner } from "@chakra-ui/react";
 const Description = () => {
+      const navigate = useNavigate();
       const params = useParams();
       const [data, setData] = useState({
             image: [],
             title: "",
             price: 0,
             description: "",
+            Quantity:1
       });
       useEffect(() => {
             axios.get(
@@ -28,12 +30,13 @@ const Description = () => {
       const [toggle, setToggle] = useState(false);
       const handleBag = () => {
             setToggle(toggle ? false : true);
+            const item = JSON.parse(localStorage.getItem("CartItem"))||[];
+            item.push({...data,Quantity:1});
+            localStorage.setItem("CartItem", JSON.stringify(item));
       };
       // // local storage functionality pending
       const handleBucket = () => {
-            const item = JSON.parse(localStorage.getItem("CartItem"));
-            item.push(data);
-            localStorage.setItem("CartItem", JSON.stringify(item));
+            navigate("/cart");
       };
       const settings = {
             dots: true,
