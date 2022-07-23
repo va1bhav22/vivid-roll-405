@@ -5,6 +5,7 @@ import SProductCard from '../Components/SProductCard';
 import { getAllData } from '../Redux/AllDataProvider/action';
 import styles from '../Styled/searchPage.module.css';
 import styled  from 'styled-components'
+import ProductCard from './ProductCard';
 const SearchPage = () => {
     const productsData = useSelector((state)=> state.allDataReducer.data);
    
@@ -16,7 +17,7 @@ const SearchPage = () => {
     const handleChange = (e)=>{
       setSearchText(e.target.value);
       
-      const filterData =  productsData.filter((item) => item.title.toLowerCase().includes(e.target.value.toLowerCase()));
+      const filterData =  productsData.filter((item) => item.title?.toLowerCase().includes(e.target.value.toLowerCase()));
       setFilteredProduct([]) 
  setFilteredProduct(filterData)
       
@@ -54,16 +55,17 @@ const SearchPage = () => {
                className={searchText.length>0 ? styles.searchbar_active : styles.searchbar}/>
         </div>
         <AllcardWraper>
-        { filterdProduct.map((item)=>{
+        {filterdProduct.map((item)=>{
           return(
-            <div key = {item.id}>
-                <SProductCard name= {item.title}
-                 avatar = {item.image}
-                 price = {item.price}
-                 />
-            </div>
+            <div key={item.id}>
+          <ProductCard title={item.title}
+           image={item.image[0]}
+            price={item.price}/>
+          </div>
           )
         })}
+              
+                       
         </AllcardWraper>
     </div>
   )

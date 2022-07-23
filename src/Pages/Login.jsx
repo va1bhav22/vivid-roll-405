@@ -1,3 +1,4 @@
+import { position } from '@chakra-ui/react';
 import React, { useState } from 'react'
 import styles from '../Styled/login.module.css'
 import Register from './Register';
@@ -12,7 +13,7 @@ const Login = () => {
   return (
  
     < >
-        <div styles={{display: 'flex'}}>
+        <div styles={{display: 'flex',marginTop: '100px', position: 'relative'}}>
             <p className={styles.heading}>LOG IN</p>
             <div className={styles.input_wrap} >
                     <br/>

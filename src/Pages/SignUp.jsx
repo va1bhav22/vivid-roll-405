@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import styles from '../Styled/signup.module.css';
-
+import { useDispatch } from 'react-redux';
 const SignUp = () => {
     const [userDetails,setUserDetails] = useState({
         email : '',
