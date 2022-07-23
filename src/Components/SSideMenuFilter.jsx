@@ -2,8 +2,6 @@ import { AddIcon, MinusIcon } from '@chakra-ui/icons'
 import {
   Drawer,
   DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
