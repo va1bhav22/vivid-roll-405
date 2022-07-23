@@ -37,15 +37,13 @@ const NavbarRoutes = () => {
         </PrivateRoutes>
         }/>
         <Route path='/t_shirt' element={<STshirt/>}/>
-        <Route path="/address" element={
-          <PrivateRoutes>
-               <AddressPage />
-          </PrivateRoutes>
-       
-        
-        }/>
+        <Route path="/address" element={<AddressPage />}/>
         <Route path='/shirt' element={<Shirt/>}/>
-        <Route path="/cardpayment" element={<CardPayment />} />
+        <Route path="/cardpayment" element={
+        <PrivateRoutes>
+            <CardPayment />
+        </PrivateRoutes>
+        } />
         <Route path="/payment" element={<Payment />} />
         <Route path='/search' element={<SearchPage/>}/>
         <Route path='/otp' element={<Otp />}/>
