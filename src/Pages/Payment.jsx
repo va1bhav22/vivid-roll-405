@@ -24,13 +24,7 @@ const Payment = () => {
       return (
             <div>
                   <div className={styles.Box}>
-                        <div className={styles.Box1}>
-                              <img
-                                    src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg"
-                                    alt=""
-                              />
-                              <p>HELP</p>
-                        </div>
+                      
                         <div className={styles.Box2}>
                               <p>CHOOSE A PAYMENT METHOD</p>
                               <div className={styles.minibox}>

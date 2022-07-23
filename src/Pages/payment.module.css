@@ -3,7 +3,7 @@
     width: 98%;
     border: px solid;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 30vh;
     display: grid;
     grid-template-columns: repeat(1,1450px);
     grid-template-rows: repeat(3,200px);
