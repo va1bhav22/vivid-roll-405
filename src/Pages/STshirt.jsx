@@ -24,18 +24,18 @@ console.log(SweatShirt);
   return (
     <div  style={{backgroundColor:"black"}}>
       <div >
-      <SProductCard data={TShirt} />
+      <SProductCard data={TShirt} title = "T-SHIRTS"/>
        </div>
        <div >
-      <SProductCard data={Tracksuit} />
+      <SProductCard data={Tracksuit} title = "TRACKSUITS" />
        </div>
 
       <div >
-      <SProductCard data={Trouser} />
+      <SProductCard data={Trouser} title = "TROUSERS"/>
        </div>
 
        <div >
-      <SProductCard data={SweatShirt} />
+      <SProductCard data={SweatShirt} title = "SWEARTSHIRTS"/>
        </div>
     </div>
   )
