@@ -50,7 +50,10 @@ const SearchPage = () => {
         
   return (
     <div>
-        {/* <Navbar/> */}
+      
+      <Navbar/>
+     
+        
         <div className={styles.main}>
               <input type='search' placeholder='ENTER SEARCH TERMS'
                onChange ={(e)=>handleChange(e)}
@@ -81,7 +84,7 @@ display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:20px;
 justify-content:space-around;
-
+position : absolue;
 color: black;
 background-color: white;
 width:80%;

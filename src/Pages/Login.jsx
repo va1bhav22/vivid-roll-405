@@ -1,7 +1,7 @@
 import { position } from '@chakra-ui/react';
 import React, { useState } from 'react'
 import {useSelector,useDispatch} from 'react-redux';
-import {useNavigate} from 'react-router-dom';
+import {useNavigate,useLocation} from 'react-router-dom';
 import { login } from '../Redux/AuthProvider/action';
 import { LOGIN_SUCCESS } from '../Redux/AuthProvider/actionTypes';
 import styles from '../Styled/login.module.css'
@@ -11,7 +11,8 @@ const Login = () => {
     const [username,setUsername] = useState('');
     const [password,setPassword] = useState('');
         const dispatch = useDispatch();
-        const navigate = useNavigate()
+        const navigate = useNavigate();
+        const location  = useLocation()
     const handleLogin = (e)=>{
         e.preventDefault();
         if(username && password){
@@ -21,7 +22,14 @@ const Login = () => {
                 }
                 dispatch(login(params)).then((r)=>{
                         if(r === LOGIN_SUCCESS){
-                            navigate("/", {replace : true})    
+                                console.log("login", location);
+                                if(location.state){
+                                        navigate(`${location?.state?.from?.pathname}` , {replace : true})    
+                                }
+                                else{
+                                        navigate('/in', {replace : true})
+                                }
+                           
                         }
                         else{
                                 alert("invalid Crenditials");
@@ -55,7 +63,10 @@ const Login = () => {
             </div>
             
         </div>
+        <div style={{display : 'flex'}}>
         <Register/>
+        </div>
+        
         
        
 

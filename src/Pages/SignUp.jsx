@@ -16,7 +16,7 @@ const SignUp = () => {
         // city : '',
         // state : '',
         mobile : '',
-        decription : ''
+        description : ''
 
     });
     const dispatch = useDispatch();
@@ -76,7 +76,7 @@ const SignUp = () => {
             <div className={styles.input_wrap}>
                 <br/>
                 <input className={styles.inputText} 
-                name='decription' value={userDetails.decription}
+                name='description' value={userDetails.description}
                 onChange={handleUserDetails} type='text' required />
                 <label className={styles.label}>ADDRESS</label>
             </div>
@@ -126,7 +126,7 @@ const SignUp = () => {
             
         </div>
         <div>
-            
+         
         </div>
 
         
