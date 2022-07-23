@@ -14,12 +14,12 @@ const Navbar = () => {
         <Image className={styles.logo} src='https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg' alt='zara logo'/>
         </div>
         <div className={styles.end_MainDiv}>
-          <Link  to='/search'> <p style={{borderBottom:"1px solid black"}}>SEARCH</p></Link>
-          <div style={{display: 'flex', marginTop: '-20px' ,justifyContent : 'end',marginLeft: '30px', gap:'20px'}}>
+          <Link  to='/search'>SEARCH</Link>
+          {/* <div style={{display: 'flex', marginTop: '-20px' ,justifyContent : 'end',marginLeft: '30px', gap:'20px'}}> */}
           <Link to='/login'>LOGIN</Link>
           <Link to='/help'>HELP</Link>
           <Link to='/cart' fontSize='14px'><IoCartOutline size={'30px'}/></Link>
-          </div>
+          {/* </div> */}
           
         </div>
     </div>
