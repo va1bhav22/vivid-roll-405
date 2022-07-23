@@ -19,6 +19,7 @@ import Navbar from '../Components/Navbar';
 import AddressPage from "../Pages/AddressPage";
 import AddToCartPage from '../Components/AddToCartPage';
 import STshirt from '../Pages/STshirt';
+import PrivateRoutes from './PrivateRoute';
 const NavbarRoutes = () => {
   return (
     <>
@@ -34,7 +35,11 @@ const NavbarRoutes = () => {
         <Route path='/athletics' element={<STshirt/>}/>
         <Route path="/address" element={<AddressPage />}/>
         <Route path='/shirt' element={<Shirt/>}/>
-        <Route path="/cardpayment" element={<CardPayment />} />
+        <Route path="/cardpayment" element={
+        <PrivateRoutes>
+            <CardPayment />
+        </PrivateRoutes>
+        } />
         <Route path="/payment" element={<Payment />} />
         <Route path='/search' element={<SearchPage/>}/>
         <Route path='/otp' element={<Otp />}/>

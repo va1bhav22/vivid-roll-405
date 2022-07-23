@@ -5,6 +5,7 @@ import SProductCard from '../Components/SProductCard';
 import { getAllData } from '../Redux/AllDataProvider/action';
 import styles from '../Styled/searchPage.module.css';
 import styled  from 'styled-components'
+import ProductCard from './ProductCard';
 const SearchPage = () => {
     const productsData = useSelector((state)=> state.allDataReducer.data);
    
@@ -15,9 +16,11 @@ const SearchPage = () => {
     const dispatch = useDispatch()
     const handleChange = (e)=>{
       setSearchText(e.target.value);
-      
-      const filterData =  productsData.filter((item) => item.title.toLowerCase().includes(e.target.value.toLowerCase()));
       setFilteredProduct([]) 
+      const filterData = searchText.length>0 ?
+       productsData.filter((item) =>
+        item.title?.toLowerCase().includes(e.target.value.toLowerCase())) : [];
+     
  setFilteredProduct(filterData)
       
       console.log(filterdProduct);
@@ -47,23 +50,27 @@ const SearchPage = () => {
         
   return (
     <div>
-        {/* <Navbar/> */}
+      
+      <Navbar/>
+     
+        
         <div className={styles.main}>
               <input type='search' placeholder='ENTER SEARCH TERMS'
                onChange ={(e)=>handleChange(e)}
                className={searchText.length>0 ? styles.searchbar_active : styles.searchbar}/>
         </div>
         <AllcardWraper>
-        { filterdProduct.map((item)=>{
+        {filterdProduct.map((item)=>{
           return(
-            <div key = {item.id}>
-                <SProductCard name= {item.title}
-                 avatar = {item.image}
-                 price = {item.price}
-                 />
-            </div>
+            <div >
+          <ProductCard title={item.title}
+           image={item.image[0]}
+            price={item.price}/>
+          </div>
           )
         })}
+              
+                       
         </AllcardWraper>
     </div>
   )
@@ -77,7 +84,7 @@ display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:20px;
 justify-content:space-around;
-
+position : absolue;
 color: black;
 background-color: white;
 width:80%;

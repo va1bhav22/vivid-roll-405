@@ -13,7 +13,7 @@ const SProductCard = ({data, title}) => {
     <div style={{marginTop:"28vh"}}>
       <Heading style={{textAlign:"center",fontSize:"3rem"}}>{title}</Heading>
     <DataWrapper>
-      {data.map((item)=>{
+      {data?.map((item)=>{
         return (
 
           <Flex key={item.id} direction={'column'} mb={"40px"} p={2} w={"90%"} onClick={()=>{ handleProduct(item.id)}} >
@@ -24,6 +24,8 @@ const SProductCard = ({data, title}) => {
             <Flex justify={"space-between"} fontSize={"10px"}>
             <Text >{item.title}</Text>
             <Text>₹{item.price}</Text>
+            <Text>{item.color}</Text>
+            <Text>{item.size}</Text>
             </Flex>
         </Flex>
           )
@@ -43,3 +45,5 @@ width:80%;
 margin:auto;
 `;
 export default SProductCard
+
+

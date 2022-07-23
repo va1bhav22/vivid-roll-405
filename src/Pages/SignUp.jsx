@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
 import styles from '../Styled/signup.module.css';
 import { useDispatch } from 'react-redux';
-
+import {useNavigate} from 'react-router-dom';
+import { register } from '../Redux/AuthProvider/action';
+import { SIGNUP_SUCCESS } from '../Redux/AuthProvider/actionTypes';
 const SignUp = () => {
     const [userDetails,setUserDetails] = useState({
         email : '',
@@ -14,11 +16,11 @@ const SignUp = () => {
         // city : '',
         // state : '',
         mobile : '',
-        decription : ''
+        description : ''
 
     });
     const dispatch = useDispatch();
-
+    const navigate = useNavigate()
     const handleUserDetails = (e)=>{
         const {name,value} = e.target;
         setUserDetails({
@@ -28,7 +30,11 @@ const SignUp = () => {
     console.log(userDetails);
     const handleSignUp = (e)=>{
         e.preventDefault();
-        dispatch()
+        dispatch(register(userDetails)).then((r)=>{
+            if(r===SIGNUP_SUCCESS){
+                navigate("/login", {replace : true})
+            }
+        })
     }
   return (
     <div className={styles.main}>
@@ -70,7 +76,7 @@ const SignUp = () => {
             <div className={styles.input_wrap}>
                 <br/>
                 <input className={styles.inputText} 
-                name='decription' value={userDetails.decription}
+                name='description' value={userDetails.description}
                 onChange={handleUserDetails} type='text' required />
                 <label className={styles.label}>ADDRESS</label>
             </div>
@@ -120,7 +126,7 @@ const SignUp = () => {
             
         </div>
         <div>
-            
+         
         </div>
 
         
