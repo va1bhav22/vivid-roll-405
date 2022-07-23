@@ -24,6 +24,8 @@ const SProductCard = ({data, title}) => {
             <Flex justify={"space-between"} fontSize={"10px"}>
             <Text >{item.title}</Text>
             <Text>₹{item.price}</Text>
+            <Text>{item.color}</Text>
+            <Text>{item.size}</Text>
             </Flex>
         </Flex>
           )
@@ -45,3 +47,5 @@ width:80%;
 margin:auto;
 `;
 export default SProductCard
+
+
