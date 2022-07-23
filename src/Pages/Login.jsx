@@ -49,7 +49,7 @@ const Login = () => {
                     <br/>
                     <input className={styles.inputText} value={username}
                     onChange={(e)=>setUsername(e.target.value)} type='text' required />
-                    <label className={styles.label}>EMAIL</label>
+                    <label className={styles.label}>USERNAME</label>
             </div>
             <div className={styles.input_wrap} >
                     <br/>

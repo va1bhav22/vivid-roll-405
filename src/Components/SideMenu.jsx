@@ -22,14 +22,11 @@ import ListCard from './ListCard';
 
 export function SideMenu() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [menu,setMenu] = useState(false);
+  
 const [active,setActive] = useState('man');
 
   const btnRef = React.useRef()
-const handleMenu = ()=>{
-    setMenu(!menu);
-    // onOpen()
-}
+
   return (
     <>
       <Button ref={btnRef}  onClick={onOpen} variant={'ghost'} >
@@ -71,7 +68,7 @@ const handleMenu = ()=>{
             <div>
                 <ul>
                     
-                    {active==="man" && <ListCard catagoryList={catagoryList} cardIndex={0}/> }
+                    {active==="man" && <ListCard catagoryList={catagoryList}  cardIndex={0}/> }
                     {active==="women" && <ListCard catagoryList={catagoryList} cardIndex={1}/> }
                     {active==="kids" && <ListCard catagoryList={catagoryList} cardIndex={2}/> }
                 </ul>
