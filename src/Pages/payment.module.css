@@ -84,7 +84,7 @@ margin-top: -10%;
 .Box4{
     height: 70px;
     width: 25%;
-    border: px solid;
+    /* border: 1px solid black; */
     margin-left: 72%;
     margin-top: 39px;
     display: grid;
@@ -92,7 +92,9 @@ margin-top: -10%;
     grid-template-rows: repeat(1,60%);
     gap: 20px;
     position: fixed;
-    z-index: 10;
+    right: 10;
+    bottom: 0;
+    z-index: 1;
 }
 .Box4>div{
     border: 1px solid;

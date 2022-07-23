@@ -2,8 +2,10 @@ import React from "react";
 import styles from "./payment.module.css";
 import OTPInput, { ResendOTP } from "otp-input-react";
 import ProductFooter from "../Components/ProductFooter";
+import { useNavigate } from "react-router-dom";
 const Otp = () => {
     const [counter, setCounter] = React.useState(59);
+    const navigate = useNavigate()
     React.useEffect(() => {
    const timer =
    counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
@@ -17,8 +19,7 @@ const Otp = () => {
  const handleVr =()=>{
     if((OTP)){
         alert("purchase succesfull");
-
-        
+        navigate("/in")
       }else{
         alert("fill the all OTP")
         
