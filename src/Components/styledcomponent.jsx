@@ -70,6 +70,7 @@ export const BigItemContainer = styled.div`
       margin: 0 50px;
       margin-right: 0px;
       margin-bottom: 10px;
+      /* border: 1px solid red; */
 `;
 
 export const TotalPriceDiv = styled.div`
@@ -145,5 +146,21 @@ export const Address = styled.div`
             font-size: 13px;
             margin-top: 70px;
             margin-right: 115px;
+      }
+`;
+
+export const ChekoutButtonDiv = styled.div`
+      max-width: 30vw;
+      margin-left: 1000px !important;
+      text-align: right;
+      position: fixed;
+      z-index: 1;
+      bottom: 0;
+      right: 0;
+      button {
+            padding: 2px 15px;
+            background: black;
+            color: white;
+            margin: 10px;
       }
 `;

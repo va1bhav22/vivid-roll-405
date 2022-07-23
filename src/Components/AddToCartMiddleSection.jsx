@@ -53,7 +53,7 @@ const AddToCartMiddleSection = () => {
   };
   const handleDelete = (ind) => {
     let items = JSON.parse(localStorage.getItem("CartItem"));
-    items = items.filter((item) => item.referrence !== ind);
+    items = items.filter((item) => item.id !== ind);
     localStorage.setItem("CartItem", JSON.stringify(items));
     if (items.length === 0) {
       localStorage.removeItem("item");
@@ -61,6 +61,7 @@ const AddToCartMiddleSection = () => {
     dispatch(Get_UDATED_LOCAL_STORAGE_FUNCT(items));
   };
   const CartItem = useSelector((state) => state.cartReducer.CartProduct);
+  console.log(CartItem);
   return (
     <CartItemProductDiv>
       <Carousel autoPlay responsive={responsive}>
@@ -137,14 +138,13 @@ const AddToCartMiddleSection = () => {
                     cursor: "pointer",
                   }}
                 >
-                  <p onClick={() => handleDelete(item.referrence)}>DELETE</p>
+                  <p onClick={() => handleDelete(item.id)}>DELETE</p>
                 </div>
               </div>
             </div>
           );
         })}
       </Carousel>
-      ;
     </CartItemProductDiv>
   );
 };
