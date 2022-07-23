@@ -26,7 +26,6 @@ export function SideMenu() {
 const [active,setActive] = useState('man');
 
   const btnRef = React.useRef()
-
   return (
     <>
       <Button ref={btnRef}  onClick={onOpen} variant={'ghost'} >
@@ -37,7 +36,7 @@ const [active,setActive] = useState('man');
         placement='left'
         onClose={onClose}
         finalFocusRef={btnRef}
-        size = 'md'
+       
       >
         <DrawerOverlay />
         <DrawerContent>

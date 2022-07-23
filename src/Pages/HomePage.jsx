@@ -5,7 +5,6 @@ import MenLandingPage from "./MenLandingPage"
 const HomePage = () => {
   return (
    <div>
-    <Navbar/>
    
     <MenLandingPage/>
    </div>

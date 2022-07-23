@@ -82,7 +82,7 @@ const moreProducts = [
 ]
 
 const init = {
-    CartProduct : JSON.parse(localStorage.getItem('CartItem')),
+    CartProduct : JSON.parse(localStorage.getItem('CartItem')) || [] ,
     moreProduct : moreProducts,
     total_amount : 0,
 }

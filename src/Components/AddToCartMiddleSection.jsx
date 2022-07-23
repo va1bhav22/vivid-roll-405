@@ -64,7 +64,8 @@ const AddToCartMiddleSection = () => {
   console.log(CartItem);
   return (
     <CartItemProductDiv>
-      <Carousel autoPlay responsive={responsive}>
+      {CartItem && (
+        <Carousel autoPlay responsive={responsive}>
         {CartItem?.map((item, index) => {
           return (
             <div
@@ -95,7 +96,7 @@ const AddToCartMiddleSection = () => {
                   alt={item.title}
                   style={{
                     display: "block",
-                    width: "115%",
+                    width: "100%",
                     marginLeft: "auto",
                     marginRight: "auto",
                     placeItems: "center",
@@ -145,6 +146,14 @@ const AddToCartMiddleSection = () => {
           );
         })}
       </Carousel>
+      )}
+      {
+        !CartItem && (
+          <div>
+            <p>Your Cart is Empty.</p>
+          </div>
+        )
+      }
     </CartItemProductDiv>
   );
 };
