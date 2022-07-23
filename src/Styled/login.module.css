@@ -50,3 +50,13 @@
     background-color: black;
     padding: 5px;
 }
+.regsec{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(1,150px);
+    grid-template-rows: repeat(3,50px);
+    gap: 1rem;
+}
+.regsec>div{
+    border: 1px solid green;
+}

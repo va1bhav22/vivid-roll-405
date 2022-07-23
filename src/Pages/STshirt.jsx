@@ -3,26 +3,25 @@ import {useSelector,useDispatch} from "react-redux"
 import {getTshirtData,getTracksuitData,getTrouserData,getSweatShirtData} from "../Redux/AppProvider/action"
 import { useEffect } from 'react'
 import SProductCard from '../Components/SProductCard'
+import ProductFooter from '../Components/ProductFooter'
 
 //claver programmer
 const STshirt = () => {
     const {TShirt,Tracksuit,Trouser,SweatShirt}=useSelector(state=>state.AppReducer)
     const dispatch=useDispatch();
-//     console.log(TShirt);
-// console.log(Tracksuit)
-console.log(SweatShirt);
-
     useEffect(() => {
           
-          dispatch(getTshirtData);
-          dispatch(getTracksuitData);
-          dispatch(getTrouserData);
-           dispatch(getSweatShirtData);
+          dispatch(getTshirtData());
+          dispatch(getTracksuitData());
+          dispatch(getTrouserData());
+           dispatch(getSweatShirtData());
+          
       }, []);
       // console.log(Tshirt);
+      console.log("hello")
 
   return (
-    <div  style={{backgroundColor:"black"}}>
+    <div>
       <div >
       <SProductCard data={TShirt} title = "T-SHIRTS"/>
        </div>
@@ -37,6 +36,7 @@ console.log(SweatShirt);
        <div >
       <SProductCard data={SweatShirt} title = "SWEARTSHIRTS"/>
        </div>
+       <ProductFooter/>
     </div>
   )
 }

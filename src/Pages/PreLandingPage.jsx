@@ -13,7 +13,7 @@ const PreLandingPage = () => {
     <div>
        <Box>
   <Image style={{position:"relative"}}  boxSize='100%'  src='https://static.zara.net/photos//contents/mkt/spots/ss22-studio-collection-maintenance/subhome-xmedia-worldwide//landscape-4dd0d4b7-3e8c-4541-8045-9e38557d0856_0.jpg?ts=1647452534065' alt='Dan Abramov' />
-  <Image style={{position:"absolute",marginTop:"-48%",marginLeft:"100px"}} boxSize='12%' src='https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg'/>
+  {/* <Image style={{position:"absolute",marginTop:"-48%",marginLeft:"100px"}} boxSize='12%' src='https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg'/> */}
     <Box style={{position:"absolute",marginTop:"-200px"}} >
      <Flex style={{gap:"20px",marginLeft:"70px"}}>
      <Box >

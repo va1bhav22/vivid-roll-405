@@ -28,7 +28,7 @@ export const MenuDiv = styled.div`
 
 export const CartTopSectionDiv = styled.div`
       width: 35vw;
-      margin-top: 40px;
+      margin-top: 28vh;
       margin-left: 50px;
       height: 120px;
 `;

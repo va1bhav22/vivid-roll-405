@@ -2,7 +2,7 @@ export const catagoryList = [
    [ 
         {
             title : 'ZARA ATHLETICZ',
-            path : '/zara_athleticz',
+            path : '/athletics',
             cName : 'styles.list'
         },
         {

@@ -61,12 +61,14 @@ const getSweatShirtFailure=()=>({
 
 
 //TSHIRT
- export const getTshirtData=(params)=>(dispatch)=>{
+ export const getTshirtData=()=>(dispatch)=>{
     dispatch(gettshirtRequest())
    console.log("Hello world")
     return axios
-    .get("https://62d7a8e551e6e8f06f1fd777.mockapi.io/T-SHIRTS",params)
-    .then((r)=>dispatch(gettshirtSuccess(r.data)))
+    .get("https://62d7a8e551e6e8f06f1fd777.mockapi.io/T-SHIRTS")
+    .then((r)=>{
+      console.log("data" ,r.data)
+      dispatch(gettshirtSuccess(r.data))})
     .catch((e)=>dispatch(gettshirtFailure()))            
 }
 
