@@ -1,6 +1,9 @@
 .main{
-    margin-left: 80px;
-    
+  
+   width: 70%;
+  margin: auto;
+   margin-top: 30vh;
+   font-size: 0.7rem;
 }
 .input_wrap{
     position: relative;
@@ -30,7 +33,7 @@
 }
 .heading{
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 .btnDiv{
     margin: 30px;
