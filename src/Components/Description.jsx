@@ -21,8 +21,8 @@ const Description = () => {
             Quantity:1
       });
       useEffect(() => {
-            axios.get(
-                  `https://62d985509eedb699635e1af0.mockapi.io/Mens_jeans-data/${params.id}`
+            axios.get(  
+                  `https://62d7a8e551e6e8f06f1fd777.mockapi.io/${params.key}/${params.id}`
             )
                   .then((res) => setData(res.data))
                   .catch((error) => console.error(error));

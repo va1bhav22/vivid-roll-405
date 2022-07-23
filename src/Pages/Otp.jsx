@@ -19,7 +19,7 @@ const Otp = () => {
   const [OTP, setOTP] = React.useState("");
  const handleVr =()=>{
     if((OTP)){
-        alert("purchase succesfull");
+        alert("Your Payment Successfully");
         navigate("/in")
       }else{
         alert("fill the all OTP")
