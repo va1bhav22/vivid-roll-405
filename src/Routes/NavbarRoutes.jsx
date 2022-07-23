@@ -31,7 +31,7 @@ const NavbarRoutes = () => {
         <Route path='/jeans' element={<JeansPage/>}/>
         <Route path='/description/:key/:id' element={<Description />}></Route>
         <Route path="/cart" element={<AddToCartPage/>}/>
-        <Route path='/t_shirt' element={<STshirt/>}/>
+        <Route path='/athletics' element={<STshirt/>}/>
         <Route path="/address" element={<AddressPage />}/>
         <Route path='/shirt' element={<Shirt/>}/>
         <Route path="/cardpayment" element={<CardPayment />} />
