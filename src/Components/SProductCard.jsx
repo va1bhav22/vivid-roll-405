@@ -13,7 +13,7 @@ const SProductCard = ({data, title}) => {
     <>
       <Heading>{title}</Heading>
     <DataWrapper>
-      {data.map((item)=>{
+      {data?.map((item)=>{
         return (
 
           <Flex key={item.id} direction={'column'} mb={"40px"} p={2} w={"90%"} onClick={()=>{ handleProduct(item.id)}} >
