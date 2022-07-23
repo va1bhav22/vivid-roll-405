@@ -3,7 +3,7 @@
     justify-content: space-between;
    padding : 20px;
    padding-bottom: 0px;
-  
+  color: rgb(122, 121, 118);
   position: fixed; top: 0; left: 0; z-index:1; width: 100%; 
 }
 .logo{
