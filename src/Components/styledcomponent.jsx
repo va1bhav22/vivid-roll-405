@@ -88,7 +88,7 @@ export const AddressMainDiv = styled.div`
       width: 98vw;
       height: 90vh;
       margin: auto;
-      margin-top: 5px;
+      margin-top: 30vh;
 `;
 
 export const AddressDiv = styled.div`
