@@ -3,13 +3,14 @@ import Slider from "react-slick";
 import "../Styled/LandingPage.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import videoBg from "../assets/videoBg.mp4"
 
 const MenLandingPage = () => {
   const settings = {
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     speed: 1000,
     autoplaySpeed: 3000,
     vertical: true,
@@ -18,10 +19,8 @@ const MenLandingPage = () => {
   return (
     <Slider {...settings}>
       <div className="slide">
-        <img
-          src="https://static.businessworld.in/article/article_extra_large_image/1615361066_ogjPwG_2021_03_10T071823Z_1_LYNXMPEH290CP_RTROPTP_4_HEALTH_CORONAVIRUS_FRANCE_SHOPS.JPG"
-          alt=""
-        />
+          <video src={videoBg} autoPlay loop muted/>
+
       </div>
       <div className="slide">
         <img
