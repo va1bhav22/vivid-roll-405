@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./payment.module.css";
+// import videoBg from "../assets/videoBg.mp4"
 import OTPInput, { ResendOTP } from "otp-input-react";
 import ProductFooter from "../Components/ProductFooter";
-import videoBg from "../assets/videoBg.mp4"
+import { useNavigate } from "react-router-dom";
 const Otp = () => {
     const [counter, setCounter] = React.useState(59);
+    const navigate = useNavigate()
     React.useEffect(() => {
    const timer =
    counter > 0 && setInterval(() => setCounter(counter - 1), 1000);
@@ -18,8 +20,7 @@ const Otp = () => {
  const handleVr =()=>{
     if((OTP)){
         alert("purchase succesfull");
-
-        
+        navigate("/in")
       }else{
         alert("fill the all OTP")
         
@@ -30,7 +31,7 @@ const Otp = () => {
         <div>
            
             <div className={styles.Box}>
-            <video src={videoBg} autoPlay loop muted/>
+            {/* <video src={videoBg} autoPlay loop muted/> */}
    <div className={styles.Box1}>
    
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg" alt="" />

@@ -83,7 +83,8 @@ const moreProducts = [
 
 const init = {
     CartProduct : JSON.parse(localStorage.getItem('CartItem')),
-    moreProduct : moreProducts
+    moreProduct : moreProducts,
+    total_amount : 0,
 }
 
 export const cartReducer = (state=init, {type,payload})=> {
@@ -93,6 +94,9 @@ export const cartReducer = (state=init, {type,payload})=> {
 
         case "GET_UPDATED_ITEM_QUANTITY" : 
             return {...state,CartProduct : payload};
+           
+        case "GET_ITEMS_TOTAL_AMOUNT" : 
+            return {...state,total_amount : payload};
         default:
             return state;
     }

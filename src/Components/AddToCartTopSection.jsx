@@ -4,21 +4,14 @@ import { useSelector } from "react-redux";
 
 const AddToCartTopSection = () => {
       const cart = useSelector((state) => state.cartReducer.CartProduct);
-      const [total,setTotal] = useState(0);
-      useEffect(() => {
-            var total_amount = 0;
-            cart.map((item)=> {
-                 return total_amount += item.Qyantity*item.price;
-            });
-            setTotal(total_amount);
-      }, [cart]);
+
       return (
             <CartTopSectionDiv>
                   <div
                         style={{
                               display: "flex",
                               justifyContent: "space-around",
-                              width: "90%",
+                              width: "60%",
                               // border: "1px solid red",
                               margin: "auto",
                               marginLeft: "10px",
@@ -33,9 +26,6 @@ const AddToCartTopSection = () => {
                         </div>
                         <div>
                               <p style={{ color: "black" }}>WISHLIST</p>
-                        </div>
-                        <div style={{ marginLeft: "40px" }}>
-                              <pre>TOTAL : {total}</pre>
                         </div>
                   </div>
                   <div>
