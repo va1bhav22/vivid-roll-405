@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./payment.module.css";
 import OTPInput, { ResendOTP } from "otp-input-react";
 import ProductFooter from "../Components/ProductFooter";
+import videoBg from "../assets/videoBg.mp4"
 const Otp = () => {
     const [counter, setCounter] = React.useState(59);
     React.useEffect(() => {
@@ -27,8 +28,11 @@ const Otp = () => {
 
     return(
         <div>
+           
             <div className={styles.Box}>
+            <video src={videoBg} autoPlay loop muted/>
    <div className={styles.Box1}>
+   
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg" alt="" />
     <p>HELP</p>
    </div>
