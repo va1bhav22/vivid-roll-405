@@ -22,7 +22,7 @@ import STshirt from '../Pages/STshirt';
 const NavbarRoutes = () => {
   return (
     <>
-   
+       <Navbar/>
     <Routes>
       <Route path='/' element={<PreLandingPage/>}/>
         <Route path='/in' element={<HomePage/>}/>

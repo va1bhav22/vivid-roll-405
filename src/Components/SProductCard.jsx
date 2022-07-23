@@ -10,8 +10,8 @@ const SProductCard = ({data, title}) => {
         navigate(`/description/${title}/${id}`);
   }
   return (
-    <>
-      <Heading>{title}</Heading>
+    <div style={{marginTop:"28vh"}}>
+      <Heading style={{textAlign:"center",fontSize:"3rem"}}>{title}</Heading>
     <DataWrapper>
       {data.map((item)=>{
         return (
@@ -29,7 +29,7 @@ const SProductCard = ({data, title}) => {
           )
         })}
     </DataWrapper>
-    </>
+    </div>
   )
 }
 
@@ -38,9 +38,7 @@ display:grid;
 grid-template-columns:repeat(4,1fr);
 gap:20px;
 justify-content:space-around;
-border:1px solid red;
-color:white;
-background-color:black;
+
 width:80%;
 margin:auto;
 `;

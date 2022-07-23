@@ -7,7 +7,6 @@ import CartNavbar from "./CartNavbar";
 const AddToCartPage = () => {
       return (
             <>
-                  <CartNavbar />
                   <AddToCartTopSection />
                   <AddToCartMiddleSection />
                   <AddToCartBottom />

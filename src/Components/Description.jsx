@@ -9,6 +9,7 @@ import axios from "axios";
 import { Spinner } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
 import { GET_UPDATED_ITEM_QUANTITY_FUNC } from "../Redux/CartProvider/action";
+import ProductFooter from "./ProductFooter";
 const Description = () => {
       const navigate = useNavigate();
       const dispatch = useDispatch();
@@ -63,6 +64,7 @@ const Description = () => {
       // const price = 6990;
 
       return (
+            <>
             <div className={styles.desc}>
                   <div className={styles.descCh}>
                         <div className={styles.extraDP}>
@@ -149,6 +151,8 @@ const Description = () => {
                         </div>
                   </div>
             </div>
+                  <ProductFooter/>
+                  </>
       );
 };
 
