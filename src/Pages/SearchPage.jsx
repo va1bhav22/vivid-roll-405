@@ -16,9 +16,11 @@ const SearchPage = () => {
     const dispatch = useDispatch()
     const handleChange = (e)=>{
       setSearchText(e.target.value);
-      
-      const filterData =  productsData.filter((item) => item.title?.toLowerCase().includes(e.target.value.toLowerCase()));
       setFilteredProduct([]) 
+      const filterData = searchText.length>0 ?
+       productsData.filter((item) =>
+        item.title?.toLowerCase().includes(e.target.value.toLowerCase())) : [];
+     
  setFilteredProduct(filterData)
       
       console.log(filterdProduct);
@@ -57,7 +59,7 @@ const SearchPage = () => {
         <AllcardWraper>
         {filterdProduct.map((item)=>{
           return(
-            <div key={item.id}>
+            <div >
           <ProductCard title={item.title}
            image={item.image[0]}
             price={item.price}/>
