@@ -3,7 +3,7 @@ import {Box, Flex,Heading,Image, Text,} from "@chakra-ui/react";
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 const SProductCard = ({data, title}) => {
- console.log(title)
+ 
   const navigate = useNavigate();
   const handleProduct = (id)=> {
         // console.log(id)

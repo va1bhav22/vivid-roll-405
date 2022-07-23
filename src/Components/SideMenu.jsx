@@ -28,7 +28,7 @@ const [active,setActive] = useState('man');
   const btnRef = React.useRef()
 const handleMenu = ()=>{
     setMenu(!menu);
-    // onOpen()
+   onClose()
 }
   return (
     <>
@@ -40,7 +40,7 @@ const handleMenu = ()=>{
         placement='left'
         onClose={onClose}
         finalFocusRef={btnRef}
-        size = 'md'
+       
       >
         <DrawerOverlay />
         <DrawerContent>

@@ -9,18 +9,16 @@ import ProductFooter from '../Components/ProductFooter'
 const STshirt = () => {
     const {TShirt,Tracksuit,Trouser,SweatShirt}=useSelector(state=>state.AppReducer)
     const dispatch=useDispatch();
-//     console.log(TShirt);
-// console.log(Tracksuit)
-console.log(SweatShirt);
-
     useEffect(() => {
           
-          dispatch(getTshirtData);
-          dispatch(getTracksuitData);
-          dispatch(getTrouserData);
-           dispatch(getSweatShirtData);
+          dispatch(getTshirtData());
+          dispatch(getTracksuitData());
+          dispatch(getTrouserData());
+           dispatch(getSweatShirtData());
+          
       }, []);
       // console.log(Tshirt);
+      console.log("hello")
 
   return (
     <div>
