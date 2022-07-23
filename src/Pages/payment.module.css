@@ -81,6 +81,9 @@ margin-top: -10%;
     font-weight: bold;
     margin-top: 18px;
 }
+.mini3{
+    font-weight: 5px;
+}
 .Box4{
     height: 70px;
     width: 25%;
@@ -96,12 +99,10 @@ margin-top: -10%;
     bottom: 0;
     z-index: 1;
 }
-.Box4>div{
-    border: 1px solid;
-}
 
 .mini4{
     background-color: black;
+
     
     
 }

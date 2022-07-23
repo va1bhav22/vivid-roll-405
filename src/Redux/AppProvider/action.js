@@ -61,42 +61,42 @@ const getSweatShirtFailure=()=>({
 
 
 //TSHIRT
- export const getTshirtData=(dispatch)=>{
+ export const getTshirtData=(params)=>(dispatch)=>{
     dispatch(gettshirtRequest())
    console.log("Hello world")
     return axios
-    .get("https://62d7a8e551e6e8f06f1fd777.mockapi.io/T-SHIRTS")
+    .get("https://62d7a8e551e6e8f06f1fd777.mockapi.io/T-SHIRTS",params)
     .then((r)=>dispatch(gettshirtSuccess(r.data)))
     .catch((e)=>dispatch(gettshirtFailure()))            
 }
 
 //TRACKSUIT
-export const getTracksuitData=(dispatch)=>{
+export const getTracksuitData=(params)=>(dispatch)=>{
    dispatch(getTracksuitRequest())
   
    return axios
-   .get("https://62d7a8e551e6e8f06f1fd777.mockapi.io/TRACKSUITS")
+   .get("https://62d7a8e551e6e8f06f1fd777.mockapi.io/TRACKSUITS",params)
    .then((r)=>dispatch(getTracksuitSuccess(r.data)))
    .catch((e)=>dispatch(getTracksuitFailure()))            
 }
 
 //TROUSER
-export const getTrouserData=(dispatch)=>{
+export const getTrouserData=(params)=>(dispatch)=>{
    dispatch(getTrouserRequest())
   
    return axios
-   .get("https://62d7a8e551e6e8f06f1fd777.mockapi.io/TROUSERS")
+   .get("https://62d7a8e551e6e8f06f1fd777.mockapi.io/TROUSERS",params)
    .then((r)=>dispatch(getTrouserSuccess(r.data)))
    .catch((e)=>dispatch(getTrouserFailure()))            
 }
 
 
 //SWEATSHIRT
-export const getSweatShirtData=(dispatch)=>{
+export const getSweatShirtData=(params)=>(dispatch)=>{
    dispatch(getSweatShirtRequest())
   
    return axios
-   .get("https://62d7a8e551e6e8f06f1fd777.mockapi.io/SWEATSHIRTS")
+   .get("https://62d7a8e551e6e8f06f1fd777.mockapi.io/SWEATSHIRTS",params)
    .then((r)=>dispatch(getSweatShirtSuccess(r.data)))
    .catch((e)=>dispatch(getSweatShirtFailure()))            
 }

@@ -69,10 +69,10 @@ const Payment = () => {
                   </div>
                   <div className={styles.Box4}>
                         <div className={styles.mini3}>
-                            Total : {total_amount}
+                            Total :₹ {total_amount}
                         </div>
                         <div className={styles.mini4}>
-                              <button onClick={handleCon}>CONTINUE</button>
+                              <button onClick={handleCon}> CONTINUE</button>
                         </div>
                   </div>
                   <ProductFooter />
