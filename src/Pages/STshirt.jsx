@@ -11,7 +11,7 @@ const STshirt = () => {
     const {TShirt,Tracksuit,Trouser,SweatShirt}=useSelector(state=>state.AppReducer)
     const dispatch=useDispatch();
     useEffect(() => {
-          
+      window.scrollTo(0,0);
           dispatch(getTshirtData());
           dispatch(getTracksuitData());
           dispatch(getTrouserData());

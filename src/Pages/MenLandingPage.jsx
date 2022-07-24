@@ -8,10 +8,11 @@ import videoBg from "../assets/videoBg.mp4"
 const MenLandingPage = () => {
   const settings = {
     dots: true,
+    pauseOnHover : false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
-    speed: 1000,
+    autoplay: true,
+    speed: 2000,
     autoplaySpeed: 3000,
     vertical: true,
   
