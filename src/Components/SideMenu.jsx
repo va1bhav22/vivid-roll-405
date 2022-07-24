@@ -28,7 +28,7 @@ const [active,setActive] = useState('man');
   const btnRef = React.useRef()
   return (
     <>
-      <Button ref={btnRef}  onClick={onOpen} variant={'ghost'} >
+      <Button ref={btnRef}  onClick={onOpen}  variant="ghost" color='#111112' fontSize='2rem'>
      <HamburgerIcon/> 
       </Button>
       <Drawer
