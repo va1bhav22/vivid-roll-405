@@ -3,7 +3,7 @@ import styles from "../Styled/Description.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styled from "styled-components";
+// import styled from "styled-components";
 import { useParams , useNavigate } from "react-router";
 import axios from "axios";
 import { Spinner } from "@chakra-ui/react";
@@ -22,11 +22,22 @@ const Description = () => {
             Quantity:1
       });
       useEffect(() => {
+            window.scrollTo(0,0);
+            if(params.key === "MENS_BLAZERS"){
+                  // console.log(params);
+                  axios.get(  
+                        `https://62dc219d57ac3c3f3c5691c4.mockapi.io/${params.key}/${params.id}`
+                  )
+                        .then((res) => setData(res.data))
+                        .catch((error) => console.error(error));
+            }
+            else{
             axios.get(  
                   `https://62d7a8e551e6e8f06f1fd777.mockapi.io/${params.key}/${params.id}`
             )
                   .then((res) => setData(res.data))
                   .catch((error) => console.error(error));
+            }
       }, []);
       // console.log(data);
       // code for handling description to cart

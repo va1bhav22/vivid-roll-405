@@ -19,6 +19,7 @@ import AddressPage from "../Pages/AddressPage";
 import AddToCartPage from '../Components/AddToCartPage';
 import STshirt from '../Pages/STshirt';
 import PrivateRoutes from './PrivateRoute';
+import MensBlazerCategory from '../Components/MensBlazerCategory';
 const NavbarRoutes = () => {
   return (
     <>
@@ -32,6 +33,7 @@ const NavbarRoutes = () => {
         <Route path="/cart" element={<AddToCartPage/>}/>
         <Route path='/athletics' element={<STshirt/>}/>
         <Route path="/address" element={<AddressPage />}/>
+        <Route path='/mens_blazer' element={<MensBlazerCategory />}></Route>
         <Route path="/cardpayment" element={
         <PrivateRoutes>
             <CardPayment />

@@ -19,6 +19,11 @@ export const catagoryList = [
             title : 'SHIRT',
             path : '/shirt',
             cName : 'styles.list'
+        },
+        {
+            title : 'BLAZER',
+            path : '/mens_blazer',
+            cName : 'styles.list'
         }
     ],
     [ 
