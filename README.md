@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+Cloning the Website of Zara.com in 4 days
+Hello Visitor,
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I am happy to share that we as a team created a clone of Zara.com in just 4 days. Zara.com is one of the largest international fashion companies. we have cloned their website as per India. We have cloned it with all basic functionality and UI.
 
-## Available Scripts
+yeah, you read that right, and all the credits go to our wonderful team of 6 developers. They are
 
-In the project directory, you can run:
+Developers
 
-### `npm start`
+Ratnesh Pandey
+Kundan Kumar
+Deepanshu Mehra
+Biman Gharai
+Mohammad Saif
+Vaibhav Vijay Jadhav
+We are all students at Masai School and currently, we are in Unit- 5, so at the end of each unit, we will be assigned a project to build using all the concepts we learned in that particular unit.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Then, coming to the Tech stack to be used, we used libraries, They are
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React JS
+Redux
+HTML & CSS
+Chakra UI
+Using the above tools we were able to implement a lot of features and web pages. following are the features we included in our project.
 
-### `npm test`
+Snippets
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Below is a snippet of the Welcome page of our website. This page is made by one of our team member Vaibhav Vijay Jadhav. From this page, users can go to the Homepage of the website.
+![https://miro.medium.com/max/700/1*PHkkya2NUpFUYKT6zgbL8g.png]
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Website Welcome page
+This homepage and Product Description page is made by Kundan Kumar, it consists of a navbar with a drawer button for easy navigation on the website. it also contains some fashion posters in the form of carousels and a footer. he also played an important role in managing the whole project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Home page
 
-### `npm run eject`
+Product description page
+Below are the snippets of the navbar drawer. This navbar is present on all the web pages of our website. it consists of a drawer, a Login button, a Search Button as well as a cart button. this is made by Ratnesh Pandey. he also made both the SignUp and Login page with an API-based Authentication and dynamic Searchbar, which shows the product matched with the user search query.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Drawer
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Dynamic Search
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Login page
 
-## Learn More
+Signup Page
+below snippets are of the product page with different categories. this is almost similar to the original website. this page also contains product filter functionality. this page is made by Mohammad Saif. he is also responsible for making the database API.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Product page
+The Cart page is made by another member Deepanshu Mehra. he has made this great UI and cart page functionality using Redux. Users can increase or decrease the quantity of any product and the Total price will change accordingly. Apart from that he also made an address page of the website where users can store their addresse for product shipping purpose.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Cart page
 
-### Analyzing the Bundle Size
+Address page
+Below are the snippets of the checkout section of our website. this section consists of a total of three Web pages. this Section is made by Biman Gharai. first user will move to the payment page. this page is private which means if a user is Logged in then only he can go to this page otherwise he will redirect to Login Page and after Successful login, he can proceed further. next, he will move to the OTP Verification page and after that when he clicks on the ‘Continue’ button, then an alert message will show to him saying “Payment Successful” and as soon as the user clicks on the ok button he will redirect to the “HomePage” of our Website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+Payment Page 1
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Payment page2
 
-### Advanced Configuration
+OTP Verification with payment successful
+That’s all from my side.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Thanks for Reading………
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
