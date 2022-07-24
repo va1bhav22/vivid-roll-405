@@ -3,9 +3,11 @@ import {
       ImageDiv,
       JeansTopSectionMainDiv,
 } from "./jeansTopSection";
+import ProductFooter from "./ProductFooter";
 
 const JeansBottomSection = () => {
       return (
+            <>
             <div>
                   <JeansTopSectionMainDiv>
                         <ImageDiv>
@@ -32,9 +34,10 @@ const JeansBottomSection = () => {
                         style={{
                               display: "block",
                               width: "26vw",
-                              height: "70vh",
+                              // height: "70vh",
                               marginLeft: "auto",
                               marginRight: "auto",
+                              margin: "auto",
                               lineHeight : "16px"
                         }}
                   >
@@ -46,6 +49,8 @@ const JeansBottomSection = () => {
                         <p style={{"fontSize" : "11px"}}>2,490.00</p>
                   </div>
             </div>
+                  <ProductFooter />
+                  </>
       );
 };
 

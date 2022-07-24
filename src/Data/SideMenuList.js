@@ -3,27 +3,32 @@ export const catagoryList = [
         {
             title : 'ZARA ATHLETICZ',
             path : '/athletics',
-            cName : 'styles.list'
-        },
-        {
-            title : 'SUITS',
-            path : '/suits',
-            cName : 'styles.list'
-        },
-        {
-            title : 'JEANS',
-            path : '/jeans',
-            cName : 'styles.list'
-        },
-        {
-            title : 'SHIRT',
-            path : '/shirt',
-            cName : 'styles.list'
+            cName : 'styles.list',
+            disabled : false
         },
         {
             title : 'BLAZER',
             path : '/mens_blazer',
-            cName : 'styles.list'
+            cName : 'styles.list',
+            disabled : false
+        },
+        {
+            title : 'JEANS',
+            path : '/jeans',
+            cName : 'styles.list',
+            disabled : false
+        },
+        {
+            title : 'SUITS',
+            path : '/suits',
+            cName : 'styles.list',
+            disabled : true
+        },
+        {
+            title : 'SHIRT',
+            path : '/shirt',
+            cName : 'styles.list',
+            disabled : true
         }
     ],
     [ 

@@ -5,6 +5,7 @@ import MensBlazerSection from "./MensBlazerSection";
 import MensMidSection from "./MensMidSection";
 import MensProductItem from "./MensProductItem";
 import MensTopSection from "./MensTopSection";
+import { SSideMenuFilter } from "./SSideMenuFilter";
 
 function MensBlazerCategory() {
       const topsectionurls = {
@@ -90,27 +91,30 @@ function MensBlazerCategory() {
       const data2 = JSON.parse(localStorage.getItem("Mens4ItemsList"));
       return (
             <div>
-                  <MensTopSection topsectionurls={topsectionurls} />
-                  <MensMidSection />
-                  <MensProductItem data1={data1} data2={data2} />
-                  <MensBlazerSection />
-                  <ItemPoster
-                        imageurl={
-                              "https://static.zara.net/photos///2022/I/0/2/p/9621/803/715/2/w/429/9621803715_2_4_1.jpg?ts=1657891986662"
-                        }
-                        title={"SUIT TROUSERS"}
-                        price={"4,990.00"}
-                  />
-                  <MensProductItem data2={info} />
-                  <ItemPoster
-                        imageurl={
-                              "https://static.zara.net/photos///2022/I/0/1/p/7446/409/505/2/w/429/7446409505_2_1_1.jpg?ts=1656952029149"
-                        }
-                        price={"3,990.00"}
-                        title={"TIE-DYE PRINT VEST"}
-                  />
-                  <MensProductItem data2={info1} />
-                  <ProductFooter />
+                  {/* <SSideMenuFilter /> */}
+                  <div>
+                        <MensTopSection topsectionurls={topsectionurls} />
+                        <MensMidSection />
+                        <MensProductItem data1={data1} data2={data2} />
+                        <MensBlazerSection />
+                        <ItemPoster
+                              imageurl={
+                                    "https://static.zara.net/photos///2022/I/0/2/p/9621/803/715/2/w/429/9621803715_2_4_1.jpg?ts=1657891986662"
+                              }
+                              title={"SUIT TROUSERS"}
+                              price={"4,990.00"}
+                        />
+                        <MensProductItem data2={info} />
+                        <ItemPoster
+                              imageurl={
+                                    "https://static.zara.net/photos///2022/I/0/1/p/7446/409/505/2/w/429/7446409505_2_1_1.jpg?ts=1656952029149"
+                              }
+                              price={"3,990.00"}
+                              title={"TIE-DYE PRINT VEST"}
+                        />
+                        <MensProductItem data2={info1} />
+                        <ProductFooter />
+                  </div>
             </div>
       );
 }

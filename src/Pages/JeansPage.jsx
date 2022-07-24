@@ -3,6 +3,7 @@ import JeansBottomSection from "../Components/JeansBottomSection";
 import JeansCategoryTopSection from "../Components/JeansCategoryTopSection";
 import JeansNavbar from "../Components/JeansNavbar";
 import Navbar from "../Components/Navbar";
+import ProductFooter from "../Components/ProductFooter";
 import ReusedJeansComponent from "../Components/ReusedJeansComponent";
 
 const jeans_data = [
@@ -200,7 +201,7 @@ const jeans_data6 = [
 const JeansPage = () => {
       return (
             <>
-            <Navbar/>   
+                  <Navbar />
                   <div>
                         <JeansCategoryTopSection />
                         <ReusedJeansComponent
