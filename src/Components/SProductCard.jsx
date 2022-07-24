@@ -10,7 +10,7 @@ const SProductCard = ({data, title}) => {
         navigate(`/description/${title}/${id}`);
   }
   return (
-    <div style={{marginTop:"28vh"}}>
+    <div style={{marginTop:"4rem"}}>
       <Heading style={{textAlign:"center",fontSize:"3rem"}}>{title}</Heading>
     <DataWrapper>
       {data?.map((item)=>{
