@@ -4,6 +4,7 @@ import {getTshirtData,getTracksuitData,getTrouserData,getSweatShirtData} from ".
 import { useEffect } from 'react'
 import SProductCard from '../Components/SProductCard'
 import ProductFooter from '../Components/ProductFooter'
+import { SSideMenuFilter } from '../Components/SSideMenuFilter'
 
 //claver programmer
 const STshirt = () => {
@@ -21,8 +22,9 @@ const STshirt = () => {
       console.log("hello")
 
   return (
-    <div>
+    <div style={{position:"relative", top:"7rem"}}>
       <div >
+      <SSideMenuFilter/>
       <SProductCard data={TShirt} title = "T-SHIRTS"/>
        </div>
        <div >

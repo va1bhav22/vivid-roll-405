@@ -26,6 +26,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import {useSearchParams} from "react-router-dom";
 import {getTshirtData,getSweatShirtData, getTracksuitData, getTrouserData,} from "../Redux/AppProvider/action"
+import styles from "../Styled/Filter.module.css"
 
 export const SSideMenuFilter = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -53,14 +54,15 @@ const [size,setSize]=useState(urlSize||[]);
 
   const handleSize = (e)=> {
     const option=e.target.value;
-   let newSize=[...size];
-   if(size.includes(option)){
-    newSize.splice(newSize.indexOf(option),1);
+    
+  //  let newSize=[...size];
+  //  if(size.includes(option)){
+  //   newSize.splice(newSize.indexOf(option),1);
 
-   }else{
-    newSize.push(option);
-   };
-   setSize(newSize);
+  //  }else{
+  //   newSize.push(option);
+  //  };
+  //  setSize(newSize);
   }
 
   useEffect(() => {
@@ -83,11 +85,12 @@ const [size,setSize]=useState(urlSize||[]);
     }
   }, [size,dispatch, setSearchParams]);
   return (
-    <>
+    <div className={styles.filter}>
       <Button ref={btnRef}  onClick={onOpen} bg="black" color={"white"} 
       _hover={{
         bg:"black",color:"white"
-      }}
+      }} borderRadius="none" 
+
       >
         Filter
       </Button>
@@ -280,6 +283,6 @@ const [size,setSize]=useState(urlSize||[]);
           {/* </DrawerFooter> */}
         </DrawerContent>
       </Drawer>
-    </>
+    </div>
   )
 }
